@@ -26,6 +26,7 @@ carousel_name = "attract"
 metadata/_custom_type_script = "uid://dpe3dq8axt3g7"
 
 [node name="title" type="Label" parent="MPFCarousel" unique_id=891006880]
+visible = false
 layout_mode = 0
 offset_left = 4.0
 offset_right = 1282.0
@@ -36,6 +37,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="credits" type="Label" parent="MPFCarousel" unique_id=1026318232]
+visible = false
 layout_mode = 0
 offset_right = 1284.0
 offset_bottom = 1020.0
@@ -50,5 +52,51 @@ variable_name = "credits_string"
 metadata/_custom_type_script = "uid://bfvhmv2eirpua"
 
 [node name="mpf_logo" type="Sprite2D" parent="MPFCarousel" unique_id=705631696]
+visible = false
 position = Vector2(647, 486)
 texture = ExtResource("4_twbla")
+
+[node name="last_scores_1p" type="Node2D" parent="MPFCarousel" unique_id=903598891]
+visible = false
+
+[node name="player1_score" type="Label" parent="MPFCarousel/last_scores_1p" unique_id=2082878659]
+offset_right = 1286.0
+offset_bottom = 1026.0
+theme_override_font_sizes/font_size = 80
+text = "325,178
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_cq3lo")
+variable_name = "player1_score"
+min_digits = 2
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="last_scores_2p" type="Node2D" parent="MPFCarousel" unique_id=480594924]
+
+[node name="player1_score" type="Label" parent="MPFCarousel/last_scores_2p" unique_id=81611861]
+offset_right = 1286.0
+offset_bottom = 549.0
+theme_override_font_sizes/font_size = 80
+text = "325,178
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_cq3lo")
+variable_name = "player1_score"
+min_digits = 2
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="player2_score" type="Label" parent="MPFCarousel/last_scores_2p" unique_id=1639844542]
+offset_top = 500.0
+offset_right = 1286.0
+offset_bottom = 1026.0
+theme_override_font_sizes/font_size = 80
+text = "325,178
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_cq3lo")
+variable_name = "player2_score"
+min_digits = 2
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
