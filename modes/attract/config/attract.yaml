@@ -19,9 +19,6 @@ slide_player:
   mode_attract_started: attract
 
 sound_player:
-  mode_attract_started:
-    success:
-      bus: music
 
 timers:
   attract_carousel_timer:

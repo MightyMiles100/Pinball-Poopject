@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dscvgs5myvncm"]
+
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_a4vdr"]
+
+[node name="BaseSlide" type="Control" unique_id=656532732]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_a4vdr")
+metadata/_custom_type_script = "uid://dru3usokwlhd3"
