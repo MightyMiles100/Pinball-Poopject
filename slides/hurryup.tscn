@@ -45,5 +45,6 @@ script = ExtResource("2_vkuta")
 variable_type = 1
 variable_name = "current_hurryup"
 comma_separate = true
+initialize_empty = false
 update_event = "hurryup_value"
 metadata/_custom_type_script = "uid://bfvhmv2eirpua"

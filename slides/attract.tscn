@@ -26,7 +26,6 @@ carousel_name = "attract"
 metadata/_custom_type_script = "uid://dpe3dq8axt3g7"
 
 [node name="title" type="Label" parent="MPFCarousel" unique_id=891006880]
-visible = false
 layout_mode = 0
 offset_left = 4.0
 offset_right = 1282.0
@@ -73,6 +72,7 @@ min_digits = 2
 metadata/_custom_type_script = "uid://bfvhmv2eirpua"
 
 [node name="last_scores_2p" type="Node2D" parent="MPFCarousel" unique_id=480594924]
+visible = false
 
 [node name="player1_score" type="Label" parent="MPFCarousel/last_scores_2p" unique_id=81611861]
 offset_right = 1286.0

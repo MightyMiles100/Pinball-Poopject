@@ -17,6 +17,7 @@ modes:
   - base
   - bumpers
   - hurryup
+  - doublepts
 
 playfields:
   playfield:

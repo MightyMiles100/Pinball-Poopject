@@ -1,0 +1,32 @@
+#config_version=6
+
+mode:
+  start_events: start_mode_doublepts
+  stop_events: stop_mode_doublepts
+  priority: 1000
+
+event_player:
+  timer_doublepts_timer_complete: stop_mode_doublepts
+  doublepts_hit: stop_mode_doublepts
+  timer_doublepts_timer_tick:
+    doublepts_timer_value:
+      doublepts_timer:
+        type: int
+        value: 10 - ticks
+
+shots:
+  doublepts:
+    switch: s_right_lane
+
+slide_player:
+  mode_doublepts_started: doublepts
+
+timers:
+  doublepts_timer:
+    end_value: 10
+    start_running: true
+    tick_interval: 1s
+
+variable_player: 
+      
+  

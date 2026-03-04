@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://ksu4qdj3nj1s"]
+
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_r87wo"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="2_11m4s"]
+
+[node name="Doublepts" type="Control" unique_id=1184863588]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r87wo")
+metadata/_custom_type_script = "uid://dru3usokwlhd3"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1193761155]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 1024.0
+color = Color(0.11372549, 1, 1, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=803839143]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -283.0
+offset_bottom = 283.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 50
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=854119976]
+layout_mode = 2
+theme_override_font_sizes/font_size = 140
+text = "Double Points!!!"
+horizontal_alignment = 1
+
+[node name="MPFVariable" type="Label" parent="VBoxContainer" unique_id=2067240046]
+layout_mode = 2
+theme_override_font_sizes/font_size = 120
+text = "00"
+horizontal_alignment = 1
+script = ExtResource("2_11m4s")
+variable_name = "current_doublepts"
+comma_separate = true
+min_digits = 2
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="MPFVariable2" type="Label" parent="VBoxContainer" unique_id=1897026892]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "10"
+horizontal_alignment = 1
+script = ExtResource("2_11m4s")
+variable_type = 1
+variable_name = "doublepts_timer"
+initialize_empty = false
+update_event = "doublepts_timer_value"
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"

@@ -14,10 +14,14 @@ event_player:
   mode_base_will_stop:
     - stop_mode_bumpers
   left_lane_hit: start_mode_hurryup
+  right_lane_hit: start_mode_doublepts
 
 shots:
   left_lane:
     switches: s_left_lane
+  right_lane:
+    switches: s_right_lane
+    
 
 slide_player:
   mode_base_started: base_slide

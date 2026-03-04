@@ -53,7 +53,7 @@ theme_override_constants/margin_top = 40
 
 [node name="HFlowContainer" type="HFlowContainer" parent="MarginContainer" unique_id=1398747548]
 layout_mode = 2
-theme_override_constants/h_separation = 60
+theme_override_constants/h_separation = 800
 
 [node name="player_number" type="Label" parent="MarginContainer/HFlowContainer" unique_id=855925523]
 layout_mode = 2

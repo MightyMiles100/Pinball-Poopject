@@ -8,6 +8,8 @@ switches:
       number:
     s_left_lane:
       number:
+    s_right_lane:
+      number:
   
   #Cabinet Switches ; Switch = s_kickback, Coil = c_kickback, light = l_kickback
     s_start:
