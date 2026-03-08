@@ -8,6 +8,11 @@ mode:
 event_player:
   timer_doublepts_timer_complete: stop_mode_doublepts
   doublepts_hit: stop_mode_doublepts
+  variable_doublepts_value_update:
+    doublepts_value:
+      current_doublepts:
+        type: int
+        value: score 
   timer_doublepts_timer_tick:
     doublepts_timer_value:
       doublepts_timer:
@@ -27,6 +32,6 @@ timers:
     start_running: true
     tick_interval: 1s
 
-variable_player: 
-      
-  
+variable_player:
+  bumpers_hit:
+    score: 1_000

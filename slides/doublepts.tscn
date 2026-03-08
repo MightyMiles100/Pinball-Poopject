@@ -33,23 +33,34 @@ theme_override_constants/separation = 50
 
 [node name="Label" type="Label" parent="VBoxContainer" unique_id=854119976]
 layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
 theme_override_font_sizes/font_size = 140
 text = "Double Points!!!"
 horizontal_alignment = 1
 
 [node name="MPFVariable" type="Label" parent="VBoxContainer" unique_id=2067240046]
 layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
 theme_override_font_sizes/font_size = 120
 text = "00"
 horizontal_alignment = 1
 script = ExtResource("2_11m4s")
+variable_type = 1
 variable_name = "current_doublepts"
 comma_separate = true
-min_digits = 2
+initialize_empty = false
+update_event = "doublepts_value"
 metadata/_custom_type_script = "uid://bfvhmv2eirpua"
 
 [node name="MPFVariable2" type="Label" parent="VBoxContainer" unique_id=1897026892]
 layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
 theme_override_font_sizes/font_size = 100
 text = "10"
 horizontal_alignment = 1
@@ -58,4 +69,19 @@ variable_type = 1
 variable_name = "doublepts_timer"
 initialize_empty = false
 update_event = "doublepts_timer_value"
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="MPFVariable3" type="Label" parent="VBoxContainer" unique_id=1678994501]
+visible = false
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
+theme_override_font_sizes/font_size = 100
+text = "0"
+horizontal_alignment = 1
+script = ExtResource("2_11m4s")
+variable_type = 1
+variable_name = "doublepts_reset"
+initialize_empty = false
 metadata/_custom_type_script = "uid://bfvhmv2eirpua"

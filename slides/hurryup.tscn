@@ -32,12 +32,18 @@ alignment = 1
 
 [node name="Label" type="Label" parent="VBoxContainer" unique_id=45745664]
 layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
 theme_override_font_sizes/font_size = 180
 text = "HURRY UP!"
 horizontal_alignment = 1
 
 [node name="MPFVariable" type="Label" parent="VBoxContainer" unique_id=2100221770]
 layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
 theme_override_font_sizes/font_size = 120
 text = "100,000"
 horizontal_alignment = 1

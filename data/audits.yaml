@@ -1,35 +1,35 @@
 events:
   game_ended: 0
-  game_started: 33
+  game_started: 81
 missing_switches:
-  s_flipper_left: 24
-  s_flipper_right: 26
-  s_plunger_lane: 33
-  s_start: 3
-  s_trough_1: 33
-  s_trough_2: 33
-  s_trough_3: 33
+  s_flipper_left: 72
+  s_flipper_right: 74
+  s_plunger_lane: 81
+  s_start: 21
+  s_trough_1: 81
+  s_trough_2: 81
+  s_trough_3: 81
 player:
   score:
     average: 0
     top: []
     total: 0
 shots:
-  bumper_left: 539
-  bumper_right: 535
-  doublepts: 102
-  hurryup: 144
-  left_lane: 392
-  right_lane: 213
+  bumper_left: 1306
+  bumper_right: 1188
+  doublepts: 222
+  hurryup: 194
+  left_lane: 493
+  right_lane: 473
 switches:
-  s_bumper_left: 539
-  s_bumper_right: 535
+  s_bumper_left: 1306
+  s_bumper_right: 1188
   s_flipper_left: 7
   s_flipper_right: 7
-  s_left_lane: 399
+  s_left_lane: 500
   s_plunger_lane: 0
-  s_right_lane: 213
-  s_start: 22
+  s_right_lane: 473
+  s_start: 26
   s_trough_1: 0
   s_trough_2: 0
   s_trough_3: 0
