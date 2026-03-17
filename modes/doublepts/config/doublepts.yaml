@@ -6,13 +6,13 @@ mode:
   priority: 1000
 
 event_player:
+  player_score:
+    current_doublepts:
+      type: int
+      value: score
+
   timer_doublepts_timer_complete: stop_mode_doublepts
   doublepts_hit: stop_mode_doublepts
-  variable_doublepts_value_update:
-    doublepts_value:
-      current_doublepts:
-        type: int
-        value: score 
   timer_doublepts_timer_tick:
     doublepts_timer_value:
       doublepts_timer:
@@ -30,8 +30,10 @@ timers:
   doublepts_timer:
     end_value: 10
     start_running: true
-    tick_interval: 1s
+    tick_interval: 1s 
 
 variable_player:
   bumpers_hit:
     score: 1_000
+  hurryup_hit:
+    score: 100_000 - device.timers.hurryup_timer.ticks * 4_000

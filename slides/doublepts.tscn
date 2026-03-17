@@ -13,12 +13,6 @@ grow_vertical = 2
 script = ExtResource("1_r87wo")
 metadata/_custom_type_script = "uid://dru3usokwlhd3"
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1193761155]
-layout_mode = 0
-offset_right = 1280.0
-offset_bottom = 1024.0
-color = Color(0.11372549, 1, 1, 1)
-
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=803839143]
 layout_mode = 1
 anchors_preset = 14
@@ -49,11 +43,9 @@ theme_override_font_sizes/font_size = 120
 text = "00"
 horizontal_alignment = 1
 script = ExtResource("2_11m4s")
-variable_type = 1
 variable_name = "current_doublepts"
 comma_separate = true
-initialize_empty = false
-update_event = "doublepts_value"
+min_digits = 2
 metadata/_custom_type_script = "uid://bfvhmv2eirpua"
 
 [node name="MPFVariable2" type="Label" parent="VBoxContainer" unique_id=1897026892]
@@ -69,19 +61,4 @@ variable_type = 1
 variable_name = "doublepts_timer"
 initialize_empty = false
 update_event = "doublepts_timer_value"
-metadata/_custom_type_script = "uid://bfvhmv2eirpua"
-
-[node name="MPFVariable3" type="Label" parent="VBoxContainer" unique_id=1678994501]
-visible = false
-layout_mode = 2
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 10
-theme_override_constants/shadow_outline_size = 10
-theme_override_font_sizes/font_size = 100
-text = "0"
-horizontal_alignment = 1
-script = ExtResource("2_11m4s")
-variable_type = 1
-variable_name = "doublepts_reset"
-initialize_empty = false
 metadata/_custom_type_script = "uid://bfvhmv2eirpua"
