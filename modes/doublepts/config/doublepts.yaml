@@ -5,6 +5,11 @@ mode:
   stop_events: stop_mode_doublepts
   priority: 1000
 
+sound_player:
+  mode_doublepts_started:
+    arcade_score_interface:
+      bus: effects
+
 event_player:
   player_score:
     current_doublepts:

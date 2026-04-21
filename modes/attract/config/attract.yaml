@@ -18,8 +18,6 @@ mode_settings:
 slide_player:
   mode_attract_started: attract
 
-sound_player:
-
 timers:
   attract_carousel_timer:
     end_value: 1

@@ -62,3 +62,8 @@ variable_name = "doublepts_timer"
 initialize_empty = false
 update_event = "doublepts_timer_value"
 metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=1166413166]
+layout_mode = 0
+offset_right = 1285.0
+offset_bottom = 1028.0

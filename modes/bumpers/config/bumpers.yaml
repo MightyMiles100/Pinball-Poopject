@@ -5,7 +5,10 @@ mode:
   stop_events: stop_mode_bumpers
   priority: 200
 
-
+sound_player:
+  bumpers_hit:
+    coin_effect:
+      bus: effects
 shots:
   bumper_left:
    switch: s_bumper_left

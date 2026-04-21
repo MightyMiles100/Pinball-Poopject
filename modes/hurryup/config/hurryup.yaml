@@ -5,6 +5,11 @@ mode:
   stop_events: stop_mode_hurryup
   priority: 1000
 
+sound_player:
+  mode_hurryup_started:
+    hurryup_effect:
+      bus: effects
+      
 event_player:
   timer_hurryup_timer_complete: stop_mode_hurryup
   hurryup_hit: stop_mode_hurryup
